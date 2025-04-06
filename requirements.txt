@@ -1,3 +1,10 @@
 truffle compile
 truffle migrate
 truffle console to check smartcontract
+
+git commit
+
+list tasks in smartcontract
+list tasks in console
+in client side app
+in test
