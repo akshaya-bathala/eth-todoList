@@ -1,5 +1,5 @@
 truffle compile
-truffle migrate
+truffle migrate --reset
 truffle console to check smartcontract
 
 git commit
@@ -8,3 +8,6 @@ list tasks in smartcontract
 list tasks in console
 in client side app
 in test
+
+to run 
+npm run dev
