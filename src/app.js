@@ -132,13 +132,13 @@ const App = {
         $newTaskTemplate.find('input')
                         .prop('name',taskId)
                         .prop('checked',taskCompleted)
-                        .on('click',App.toggleCompleted)
+                        // .on('click',App.toggleCompleted)
 
 
     
       
       //put task in correct list
-      console.log($taskTemplate)
+      // console.log($taskTemplate)
 
    
 
