@@ -19,7 +19,7 @@ const App = {
           App.web3 = new Web3(window.ethereum);
           App.account = accounts[0];
   
-        //   console.log("✅ Connected wallet:", App.account);
+          console.log("✅ Connected wallet:", App.account);
   
           // Optional: Display connected account in UI
           // const statusEl = document.getElementById("account");
@@ -94,6 +94,15 @@ const App = {
       //update loading state
       App.setLoading(false)
 
+    },
+
+    createTask: async () => {
+      App.setLoading(true)
+      const content = $('#newTask').val()
+      console.log(content)
+      await App.todoList.createTask(content, {from: App.account })
+      // console.log(App.todoList.taskCount().toNumber())
+      window.location.reload()
     },
 
     setLoading: (boolean) => {
